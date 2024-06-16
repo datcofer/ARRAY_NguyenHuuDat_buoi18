@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container" id="baiTap">
+        <h2>Thực hiện tương tác xử lí thêm số trong mảng</h2>
+        <div class="mb-3">
+            <label for="" class="form-label">Số N</label>
+            <input type="text" class="form-control w-25" name="" id="soN" aria-describedby="helpId"
+                placeholder="Nhập vào số N" />
+            <button class="btn btn-success mt-3">Thêm số</button>
+            <div id="ketQua1" class="alert alert-primary mt-3 text-center fw-bold"></div>
+        </div>
+    </div>
+    <div class="container" id="xuLiYeuCau">
+        <div class="row">
+            <div class="col-6">
+                <!-- 1. Tổng các số dương trong mảng.  -->
+                <div class="tinhTongCacSoDuong">
+                    <h2 class="text-danger">1. Tổng các số dương trong mảng.</h2>
+                    <button class="btn btn-primary mt-3">Tính tổng các số dương</button>
+                    <div id="ketQua2" class="alert alert-primary mt-3 text-center w-50 fw-bold">Tổng các số dương trong
+                        mảng
+                        bằng:
+                    </div>
+                </div>
+                <!-- 2. Đếm có bao nhiêu số dương trong mảng. -->
+                <div class="tinhDemCacSoDuong">
+                    <h2 class="text-danger">2. Đếm có bao nhiêu số dương trong mảng.</h2>
+                    <button class="btn btn-danger mt-3">Đếm các số dương</button>
+                    <div id="ketQua3" class="alert alert-primary mt-3 text-center w-50 fw-bold">
+                    </div>
+                </div>
+                <!-- 3. Tìm số nhỏ nhất trong mảng. -->
+                <div class="timSoNhoNhat">
+                    <h2 class="text-danger">3. Tìm số nhỏ nhất trong mảng.</h2>
+                    <button class="btn btn-secondary mt-3">Tìm số nhỏ nhất</button>
+                    <div id="ketQua4" class="alert alert-primary mt-3 text-center w-50 fw-bold">Số nhỏ nhất trong mảng
+                        là:
+                    </div>
+                </div>
+                <!-- 4. Tìm số dương nhỏ nhất trong mảng. -->
+                <div class="timSoDuongNhoNhat">
+                    <h2 class="text-danger">4. Tìm số dương nhỏ nhất trong mảng.</h2>
+                    <button class="btn btn-dark mt-3">Tìm số dương nhỏ nhất</button>
+                    <div id="ketQua5" class="alert alert-primary mt-3 text-center w-50 fw-bold">Số dương nhỏ nhất trong
+                        mảng
+                        là:
+                    </div>
+                </div>
+                <!-- 5. Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1. -->
+                <div class="timSoChanCuoiCung">
+                    <h2 class="text-danger">5. Tìm số chẵn cuối cùng trong mảng.<br> Nếu mảng không có giá trị chẵn thì
+                        trả
+                        về
+                        -1.
+                    </h2>
+                    <button class="btn btn-warning mt-3">Tìm số chẵn cuối cùng</button>
+                    <div id="ketQua6" class="alert alert-primary mt-3 text-center w-50 fw-bold">
+                    </div>
+                </div>
+                <!-- 6. Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị). -->
+                <div class="doiChoHaiGiaTriTrongMang">
+                    <h2 class="text-danger">6. Đổi chỗ 2 giá trị trong mảng theo vị trí<br> (Cho nhập vào 2 vị trí muốn
+                        đổi
+                        chỗ
+                        giá
+                        trị).
+                    </h2>
+                    <label for="" class="form-label">Nhập vào vị trí 1</label>
+                    <input type="text" class="form-control w-25 bg-success text-white" name="" id="viTri1"
+                        aria-describedby="helpId" placeholder="Nhập vào vị trí 1" />
+                    <label for="" class="form-label">Nhập vào vị trí 2</label>
+                    <input type="text" class="form-control w-25 bg-success text-white" name="" id="viTri2"
+                        aria-describedby="helpId" placeholder="Nhập vào vị trí 2" />
+                    <button class="alert alert-danger mt-3">Đổi chỗ 2 giá trị</button>
+                    <div id="ketQua7" class="alert alert-primary mt-3 text-center w-50 fw-bold">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 ">
+                <!-- 7. Sắp xếp mảng theo thứ tự tăng dần.  -->
+                <div class="sapXepTheoThuTuTangDan">
+                    <h2 class="text-danger">7. Sắp xếp mảng theo thứ tự tăng dần.</h2>
+                    <button class="alert alert-warning mt-3">Sắp xếp mảng theo thứ tự tăng dần</button>
+                    <div id="ketQua8" class="alert alert-primary mt-3 text-center w-50 fw-bold">
+                    </div>
+                </div>
+                <!-- 8. Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1. -->
+                <div class="timSoNguyenToDauTien">
+                    <h2 class="text-danger">8. Tìm số nguyên tố đầu tiên trong mảng.<br> Nếu mảng không có số nguyên tố
+                        thì
+                        trả
+                        về –
+                        1.</h2>
+                    <button class="alert alert-secondary mt-3">Tìm số nguyên tố đầu tiên</button>
+                    <div id="ketQua9" class="alert alert-primary mt-3 text-center w-50 fw-bold">Số nguyên tố đầu tiên
+                        trong
+                        mảng
+                        là:</div>
+                </div>
+                <!-- 9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên? -->
+                <div class="baiTap9">
+                    <h2 class="text-danger">9. Nhập thêm 1 mảng số thực<br> tìm xem trong mảng có bao nhiêu số nguyên?
+                    </h2>
+                    <h3>Thực hiện tương tác xử lí thêm số thực vào trong mảng</h3>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Số thực R</label>
+                        <input type="text" class="form-control w-25" name="" id="soThucR" aria-describedby="helpId"
+                            placeholder="Nhập vào số thực R" />
+                        <button class="alert bg-danger mt-3 text-white">Thêm số</button>
+                        <div id="ketQua10" class="alert alert-primary mt-3 text-center fw-bold w-50"></div>
+                    </div>
+                    <button class="alert bg-primary mt-3">Đếm số nguyên</button>
+                    <div id="ketQua11" class="alert alert-primary mt-3 text-center fw-bold w-50"></div>
+                </div>
+                <!-- 10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn. -->
+                <div class="baiTap10">
+                    <h2 class="text-danger">10. So sánh số lượng số dương và số lượng số âm<br>xem số nào nhiều hơn.
+                    </h2>
+                    <button class="btn bg-warning mt-3">So sánh </button>
+                    <div id="ketQua12" class="alert alert-primary mt-3 text-center w-50 fw-bold">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./method.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
